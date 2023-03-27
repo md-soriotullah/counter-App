@@ -48,6 +48,7 @@ remove.onclick = () => {
 
 let counting = '';
 start.onclick = () => {
+    clearInterval(counting)
     counting = setInterval(()=> {
         count++
         output.innerHTML = count
